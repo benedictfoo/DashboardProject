@@ -55,7 +55,7 @@ aside {
   display: flex;
   align-items: center;
 }
-.logo-and-title img .white-svg {
+.logo-and-title img {
   height: 5rem;
   color: azure;
 }
