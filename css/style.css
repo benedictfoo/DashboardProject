@@ -49,10 +49,13 @@ aside {
   display: flex;
   flex-direction: column;
   background-color: #1a92d3;
+  padding: 24px;
+  gap: 48px;
 }
 /* Logo and title */
 .logo-and-title {
   display: flex;
+  gap: 16px;
   align-items: center;
 }
 .logo-and-title img {
@@ -63,4 +66,26 @@ aside {
   font-size: 3rem;
   text-decoration: none;
   color: var(--aside-color);
+}
+/* Dashboard Group */
+.dashboard-group {
+  padding-inline: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 16px;
+  font-size: 3rem;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  --height: 3rem;
+  line-height: var(--height);
+}
+
+.dashboard-row img {
+  height: var(--height);
 }
