@@ -8,7 +8,7 @@
   --fs-medium: 1.25rem;
   --fs-medium-2: 1.5rem;
   --fs-large: 2.5rem;
-  --container-padding: 24px;
+  --container-padding: 32px;
   --accent-color: #1a92d3;
   --main-background-color: #e2e8f0;
 }
@@ -138,8 +138,8 @@ header input {
 
 /* Profile */
 .avatar {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
 }
 .avatar-large {
   height: 6rem;
