@@ -55,7 +55,7 @@ aside {
 /* Logo and title */
 .logo-and-title {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   align-items: center;
 }
 .logo-and-title img {
@@ -63,7 +63,7 @@ aside {
   color: azure;
 }
 .logo-and-title a {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--aside-color);
 }
@@ -72,13 +72,13 @@ aside {
   padding-inline: 8px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .dashboard-row {
   display: flex;
   gap: 16px;
-  font-size: 3rem;
+  font-size: 1rem;
   align-items: center;
   text-decoration: none;
   color: white;
