@@ -3,6 +3,12 @@
 :root {
   line-height: 1.5;
   --nav-color: white;
+  font-family: "Roboto", sans-serif;
+  --fs-regular: 1rem;
+  --fs-medium: 1.5rem;
+  --fs-medium-2: 2rem;
+  --fs-large: 3rem;
+  --container-padding: 24px;
 }
 
 h1,
@@ -49,7 +55,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: #1a92d3;
-  padding: 24px;
+  padding: var(--container-padding);
   gap: 48px;
 }
 /* Logo and title */
@@ -63,7 +69,7 @@ nav {
   color: azure;
 }
 .logo-and-title a {
-  font-size: 1.5rem;
+  font-size: var(--fs-medium);
   text-decoration: none;
   color: var(--nav-color);
 }
@@ -78,7 +84,7 @@ nav {
 .dashboard-row {
   display: flex;
   gap: 16px;
-  font-size: 1rem;
+  font-size: var(--fs-regular);
   align-items: center;
   text-decoration: none;
   color: white;
@@ -98,11 +104,13 @@ nav {
 }
 
 /* Header */
-header {
+.header-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   background-color: white;
-  padding: 24px;
+  padding: var(--container-padding);
+  align-items: center;
 }
 
 header img {
@@ -113,4 +121,33 @@ header input {
   border-radius: 15px;
   border-color: transparent;
   flex-basis: min(60%, 700px);
+  font-size: var(--fs-medium-2);
+  padding: 1rem;
+}
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+}
+.avatar-large {
+  height: 6rem;
+  width: 6rem;
+}
+.name {
+  font-weight: bold;
+  font-size: var(--fs-medium-2);
+}
+.name-intro span {
+  line-height: 1;
+}
+.name-intro span:first-child {
+  font-size: var(--fs-medium);
+  font-weight: bold;
+}
+.name-intro span:last-child {
+  font-size: var(--fs-large);
+  font-weight: bold;
+}
+.ml-auto {
+  margin-left: auto;
 }
