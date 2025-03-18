@@ -2,7 +2,7 @@
 
 :root {
   line-height: 1.5;
-  --aside-color: white;
+  --nav-color: white;
 }
 
 h1,
@@ -44,8 +44,8 @@ body {
   width: 100%;
 }
 
-/* Aside */
-aside {
+/* Nav */
+nav {
   display: flex;
   flex-direction: column;
   background-color: #1a92d3;
@@ -65,7 +65,7 @@ aside {
 .logo-and-title a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: var(--aside-color);
+  color: var(--nav-color);
 }
 /* Dashboard Group */
 .dashboard-group {
@@ -101,4 +101,8 @@ header {
   display: flex;
   gap: 16px;
   background-color: white;
+}
+
+header img {
+  height: 2rem;
 }
