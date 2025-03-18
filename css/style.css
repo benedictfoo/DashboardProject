@@ -58,6 +58,7 @@ body {
 
 /* Nav */
 nav {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   background-color: var(--accent-color);
@@ -176,4 +177,55 @@ header input {
 main {
   background-color: var(--main-background-color);
   height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+h2 {
+  font-weight: bold;
+  font-size: var(--fs-medium-2);
+  margin-bottom: 0.75rem;
+}
+/* Projects */
+.projects {
+  height: 100%;
+  grid-column: span 1;
+  grid-row: span 6;
+  padding: var(--container-padding);
+  display: flex;
+  flex-direction: column;
+}
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  gap: 32px;
+}
+.projects article {
+  padding: 32px;
+  background-color: white;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.projects article::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f0b429;
+}
+.projects article h3 {
+  font-size: var(--fs-medium);
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.projects article p {
+  font-style: var(--fs-regular);
+  line-height: 1.75;
 }
