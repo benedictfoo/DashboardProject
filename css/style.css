@@ -10,6 +10,7 @@
   --fs-large: 2.5rem;
   --container-padding: 24px;
   --accent-color: #1a92d3;
+  --main-background-color: #e2e8f0;
 }
 
 h1,
@@ -70,7 +71,7 @@ nav {
   align-items: center;
 }
 .logo-and-title img {
-  height: 5rem;
+  height: 3rem;
   color: azure;
 }
 .logo-and-title a {
@@ -169,4 +170,10 @@ header input {
   font-size: var(--fs-medium);
   padding: 1rem;
   width: 150px;
+}
+
+/* Main */
+main {
+  background-color: var(--main-background-color);
+  height: 100%;
 }
