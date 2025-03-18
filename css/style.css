@@ -82,10 +82,23 @@ aside {
   align-items: center;
   text-decoration: none;
   color: white;
-  --height: 3rem;
+  --height: 2rem;
   line-height: var(--height);
 }
 
 .dashboard-row img {
   height: var(--height);
+}
+
+/* header-main-wrapper */
+.header-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  gap: 16px;
+  background-color: white;
 }
