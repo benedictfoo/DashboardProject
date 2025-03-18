@@ -94,15 +94,23 @@ nav {
 .header-main-wrapper {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /* Header */
 header {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   background-color: white;
+  padding: 24px;
 }
 
 header img {
   height: 2rem;
+}
+header input {
+  background-color: #e2e8f0;
+  border-radius: 15px;
+  border-color: transparent;
+  flex-basis: min(60%, 700px);
 }
