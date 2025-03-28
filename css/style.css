@@ -307,6 +307,9 @@ h3 {
   .projects-content {
     grid-template-columns: repeat(2, 1fr);
   }
+  .trending article {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 1000px) {
   .projects-content {
