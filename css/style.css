@@ -206,7 +206,7 @@ h3 {
 }
 .projects-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
   height: 100%;
   gap: 32px;
@@ -281,7 +281,6 @@ h3 {
 /* trending */
 .trending {
   grid-column: 2 / span 1;
-  align-self: start;
   display: flex;
   flex-direction: column;
 }
@@ -303,4 +302,20 @@ h3 {
 }
 .trending article * {
   align-self: center;
+}
+@media screen and (max-width: 1400px) {
+  .projects-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects-content {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
